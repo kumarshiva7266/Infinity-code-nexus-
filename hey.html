@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeContent(section) {
+            const images = {
+                home: 'url(back.PNG)',
+                about: 'url(about.jpg)',
+                resource: 'url(resourceS.jpg)',
+                project: 'url(project.jpg)',
+                blog: 'url(blog.jpg)',
+                community: 'url(community.PNG)'
+            };
+
+            const titles = {
+                home: 'Home',
+                about: 'About',
+                resource: 'Resource',
+                project: 'Project',
+                blog: 'Blog',
+                community: 'Community'
+            };
+
+            const descriptions = {
+                home: 'Welcome to Infinity Code Nexus — your ultimate tech hub! We are a community of passionate coders and innovators exploring the world of AI, ML, cybersecurity, and beyond. Whether you\'re a beginner or an experienced programmer, you’ll find opportunities to learn, collaborate, and grow with us.<br><br>Discover upcoming events and workshops.<br>Join coding challenges and hackathons.<br>Connect with like-minded individuals.<br>Let’s build the future, one code at a time!',
+                about: 'This is the About page. Here you can find information about us.',
+                resource: 'This is the Resource page. Find various resources here.',
+                project: 'This is the Project page. Learn about our projects.',
+                blog: 'This is the Blog page. Read our latest blog posts.',
+                community: 'This is the Community page. Connect with our community.'
+            };
+            
+            document.body.style.backgroundImage = images[section];
+            document.getElementById('section-title').innerText = titles[section];
+            document.getElementById('section-description').innerHTML = descriptions[section];
+        }
+    </script>
+</head>
+<body onload="changeContent('home')">
+    <div class="navbar">
+        <a href="#home" onclick="changeContent('home')">Home</a>
+        <a href="#about" onclick="changeContent('about')">About</a>
+        <a href="#resource" onclick="changeContent('resource')">Resource</a>
+        <a href="#project" onclick="changeContent('project')">Project</a>
+        <a href="#blog" onclick="changeContent('blog')">Blog</a>
+        <a href="#community" onclick="changeContent('community')">Community</a>
+    </div>
+
+    <div class="content">
+        <div class="event-info section">
+            <h1 id="section-title">Home</h1>
+            <h2>Event Information</h2>
+            <p id="section-description">Welcome to the Home page.</p>
+        </div>
+        <div class="other-info section">
+            <h2>Other Information</h2>
+            <p>Additional content and information can be placed here.</p>
+        </div>
+    </div>
+</body>
+</html>

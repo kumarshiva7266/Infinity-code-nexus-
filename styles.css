@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+.event-info {
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
+    color: red;
+    padding: 5px;
+    margin-top: 1px; /* Adjust to bring it closer */
+    border-radius: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+.image-box {
+    position: relative;
+    background-image: url('hii.JPG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.transparent-text {
+    color: white;
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#section-description {
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
